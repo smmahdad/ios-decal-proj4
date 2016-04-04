@@ -1,6 +1,7 @@
 # MyPromise
 ##Authors
 - Sam Mahdad
+
 ##Purpose
 I am creating this app to help people keep promises and committments to both 
 themselves and to others. It will be a self- contained app where people can jot 
