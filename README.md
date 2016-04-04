@@ -7,8 +7,8 @@ themselves and to others. It will be a self-contained app where people can jot
 	down what they want to do and promise themselves both in location and 
 	timing.
 ##Features
--Be able to view location based promises on a map
--Have push notifications occur when it is in the time block of a promise
+*Be able to view location based promises on a map
+*Have push notifications occur when it is in the time block of a promise
 -Allow to add and edit a promise
 ##Control Flow
 -User will be shown a splash screen showing the logo
@@ -30,8 +30,8 @@ of promises, list of daily promises, or to create a new promise
 -PromiseMapView
 -PromiseStreakView
 ###Controller
--AddPromiseViewController
--PromiseListTableViewController
+*AddPromiseViewController
+*PromiseListTableViewController
 -PromiseMapViewController
 -MyPromiseOpenViewController
 -PromiseStreakViewController
