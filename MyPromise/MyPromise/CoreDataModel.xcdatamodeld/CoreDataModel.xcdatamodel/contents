@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="DailyPromiseEntity" syncable="YES">
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="somethingelse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DaysOfPromiseEntity" syncable="YES"/>
+    </entity>
+    <entity name="DaysOfPromiseEntity" syncable="YES">
+        <attribute name="friday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="monday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="saturday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sunday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="thursday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tuesday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="wednesday" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="GeoPromiseEntity" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OneTimePromiseEntity" syncable="YES">
+        <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="PromiseEntity" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dateCompleted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OneTimePromiseEntity" syncable="YES"/>
+        <relationship name="relationship1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyPromiseEntity" syncable="YES"/>
+        <relationship name="relationship2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GeoPromiseEntity" syncable="YES"/>
+        <relationship name="relationship3" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatisticsEntity" syncable="YES"/>
+    </entity>
+    <entity name="StatisticsEntity" syncable="YES">
+        <attribute name="dateDone" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStarted" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="daysCompleted" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastDateCompleted" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PromiseEntity" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="OneTimePromiseEntity" positionX="-54" positionY="45" width="128" height="60"/>
+        <element name="DaysOfPromiseEntity" positionX="-18" positionY="108" width="128" height="150"/>
+        <element name="GeoPromiseEntity" positionX="0" positionY="153" width="128" height="90"/>
+        <element name="StatisticsEntity" positionX="18" positionY="162" width="128" height="105"/>
+        <element name="DailyPromiseEntity" positionX="36" positionY="162" width="128" height="75"/>
+    </elements>
+</model>
