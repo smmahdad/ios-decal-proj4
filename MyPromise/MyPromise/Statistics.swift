@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class Statistics {
+class Statistics : NSManagedObject {
     var daysCompleted: Int?
     var dateStarted: NSDate?
     var lastDateCompleted: NSDate?

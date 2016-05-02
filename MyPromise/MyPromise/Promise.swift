@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+
 
 class Promise : NSObject {
     var title: String?

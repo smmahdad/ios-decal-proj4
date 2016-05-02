@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		CD22B3EC1CD09F7C00C3EC9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B3EB1CD09F7C00C3EC9E /* AppDelegate.swift */; };
 		CD22B3EE1CD09F7C00C3EC9E /* CurrentPromisesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B3ED1CD09F7C00C3EC9E /* CurrentPromisesController.swift */; };
-		CD22B3F01CD09F7C00C3EC9E /* CompletedPromisesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B3EF1CD09F7C00C3EC9E /* CompletedPromisesController.swift */; };
 		CD22B3F31CD09F7C00C3EC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD22B3F11CD09F7C00C3EC9E /* Main.storyboard */; };
 		CD22B3F51CD09F7C00C3EC9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD22B3F41CD09F7C00C3EC9E /* Assets.xcassets */; };
 		CD22B3F81CD09F7C00C3EC9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD22B3F61CD09F7C00C3EC9E /* LaunchScreen.storyboard */; };
 		CD22B4031CD09F7C00C3EC9E /* MyPromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B4021CD09F7C00C3EC9E /* MyPromiseTests.swift */; };
 		CD22B40E1CD09F7C00C3EC9E /* MyPromiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B40D1CD09F7C00C3EC9E /* MyPromiseUITests.swift */; };
-		CD22B41C1CD0A00500C3EC9E /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B41B1CD0A00500C3EC9E /* StatsViewController.swift */; };
 		CD22B4231CD1292F00C3EC9E /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B4221CD1292F00C3EC9E /* Promise.swift */; };
 		CD22B4251CD12B0B00C3EC9E /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B4241CD12B0B00C3EC9E /* Statistics.swift */; };
 		CD22B4271CD12C6F00C3EC9E /* OneTimePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22B4261CD12C6F00C3EC9E /* OneTimePromise.swift */; };
@@ -26,7 +24,6 @@
 		CD8F19A41CD1BD2700D1AD50 /* MapPromisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8F19A31CD1BD2700D1AD50 /* MapPromisesViewController.swift */; };
 		CD8F19A61CD1C05500D1AD50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8F19A51CD1C05500D1AD50 /* CoreLocation.framework */; };
 		CD8F19A81CD1D83900D1AD50 /* GeoPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8F19A71CD1D83900D1AD50 /* GeoPromise.swift */; };
-		CD8F19AB1CD2752600D1AD50 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD8F19A91CD2752600D1AD50 /* CoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +47,6 @@
 		CD22B3E81CD09F7C00C3EC9E /* MyPromise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPromise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22B3EB1CD09F7C00C3EC9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD22B3ED1CD09F7C00C3EC9E /* CurrentPromisesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPromisesController.swift; sourceTree = "<group>"; };
-		CD22B3EF1CD09F7C00C3EC9E /* CompletedPromisesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedPromisesController.swift; sourceTree = "<group>"; };
 		CD22B3F21CD09F7C00C3EC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD22B3F41CD09F7C00C3EC9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD22B3F71CD09F7C00C3EC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +57,6 @@
 		CD22B4091CD09F7C00C3EC9E /* MyPromiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPromiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22B40D1CD09F7C00C3EC9E /* MyPromiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPromiseUITests.swift; sourceTree = "<group>"; };
 		CD22B40F1CD09F7C00C3EC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD22B41B1CD0A00500C3EC9E /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		CD22B4221CD1292F00C3EC9E /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		CD22B4241CD12B0B00C3EC9E /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		CD22B4261CD12C6F00C3EC9E /* OneTimePromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimePromise.swift; sourceTree = "<group>"; };
@@ -72,7 +67,6 @@
 		CD8F19A31CD1BD2700D1AD50 /* MapPromisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPromisesViewController.swift; sourceTree = "<group>"; };
 		CD8F19A51CD1C05500D1AD50 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CD8F19A71CD1D83900D1AD50 /* GeoPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPromise.swift; sourceTree = "<group>"; };
-		CD8F19AA1CD2752600D1AD50 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +126,6 @@
 				CD22B41F1CD1256000C3EC9E /* Model */,
 				CD22B3EB1CD09F7C00C3EC9E /* AppDelegate.swift */,
 				CD22B3F11CD09F7C00C3EC9E /* Main.storyboard */,
-				CD8F19A91CD2752600D1AD50 /* CoreDataModel.xcdatamodeld */,
 				CD22B3F41CD09F7C00C3EC9E /* Assets.xcassets */,
 				CD22B3F61CD09F7C00C3EC9E /* LaunchScreen.storyboard */,
 				CD22B3F91CD09F7C00C3EC9E /* Info.plist */,
@@ -181,8 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				CD22B3ED1CD09F7C00C3EC9E /* CurrentPromisesController.swift */,
-				CD22B3EF1CD09F7C00C3EC9E /* CompletedPromisesController.swift */,
-				CD22B41B1CD0A00500C3EC9E /* StatsViewController.swift */,
 				CD22B42A1CD1381C00C3EC9E /* AddPromiseViewController.swift */,
 				CD22B42C1CD1507D00C3EC9E /* PromiseDetailsViewController.swift */,
 				CD8F19A31CD1BD2700D1AD50 /* MapPromisesViewController.swift */,
@@ -258,6 +249,7 @@
 				TargetAttributes = {
 					CD22B3E71CD09F7C00C3EC9E = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = QRJJPEW6C4;
 					};
 					CD22B3FD1CD09F7C00C3EC9E = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -322,15 +314,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD22B42B1CD1381C00C3EC9E /* AddPromiseViewController.swift in Sources */,
-				CD22B3F01CD09F7C00C3EC9E /* CompletedPromisesController.swift in Sources */,
 				CD22B3EC1CD09F7C00C3EC9E /* AppDelegate.swift in Sources */,
-				CD8F19AB1CD2752600D1AD50 /* CoreDataModel.xcdatamodeld in Sources */,
 				CD22B4271CD12C6F00C3EC9E /* OneTimePromise.swift in Sources */,
 				CD8F19A41CD1BD2700D1AD50 /* MapPromisesViewController.swift in Sources */,
 				CD8F19A81CD1D83900D1AD50 /* GeoPromise.swift in Sources */,
 				CD22B4231CD1292F00C3EC9E /* Promise.swift in Sources */,
 				CD22B42D1CD1507D00C3EC9E /* PromiseDetailsViewController.swift in Sources */,
-				CD22B41C1CD0A00500C3EC9E /* StatsViewController.swift in Sources */,
 				CD22B4251CD12B0B00C3EC9E /* Statistics.swift in Sources */,
 				CD22B3EE1CD09F7C00C3EC9E /* CurrentPromisesController.swift in Sources */,
 				CD22B4291CD1308100C3EC9E /* DailyPromise.swift in Sources */,
@@ -475,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyPromise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swerve.MyPromise;
@@ -486,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyPromise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swerve.MyPromise;
@@ -581,19 +572,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CD8F19A91CD2752600D1AD50 /* CoreDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CD8F19AA1CD2752600D1AD50 /* CoreDataModel.xcdatamodel */,
-			);
-			currentVersion = CD8F19AA1CD2752600D1AD50 /* CoreDataModel.xcdatamodel */;
-			path = CoreDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CD22B3E01CD09F7C00C3EC9E /* Project object */;
 }

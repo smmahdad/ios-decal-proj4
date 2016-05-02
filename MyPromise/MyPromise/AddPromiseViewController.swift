@@ -39,10 +39,52 @@ class AddPromiseViewController: UIViewController {
             
             if updateDaysReturnDaily() {
                 newPromise = DailyPromise(titleInput: titleTextField.text, descriptionInput: descriptionTextField.text, promiseDays: booleanDays)
+                let settings = UIApplication.sharedApplication().currentUserNotificationSettings()
+                
+                if settings!.types != .None {
+                    let notification = UILocalNotification()
+                    var secondsAway = Double((newPromise as? DailyPromise)!.daysAwayFromToday() * 24 * 60 * 60 + 15)
+                    
+                    
+                    notification.fireDate = NSDate(timeIntervalSinceNow: secondsAway)
+                    let dateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "dd-MM hh:mm:ss" //format style. Browse online to get a format that fits your needs.
+                    let dateString = dateFormatter.stringFromDate(notification.fireDate!)
+                    print(dateString)
+                    print(dateFormatter.stringFromDate(NSDate()))
+                    notification.alertBody = "Don't forget to complete " + titleTextField.text!
+                    notification.alertAction = "Keep it up!"
+                    notification.soundName = UILocalNotificationDefaultSoundName
+                    notification.userInfo = ["CustomField1": "w00t"]
+                    UIApplication.sharedApplication().scheduleLocalNotification(notification)
+                }
             } else if !addressTextField.text!.isEmpty {
                 newPromise = GeoPromise(titleInput: titleTextField.text, descriptionInput: descriptionTextField.text, geoName: addressTextField.text)
+                
+                let settings = UIApplication.sharedApplication().currentUserNotificationSettings()
+                if settings!.types != .None {
+                    let notification = UILocalNotification()
+                    notification.fireDate = NSDate(timeIntervalSinceNow: 15)
+                    notification.alertBody = "Don't forget to complete " + titleTextField.text!
+                    notification.alertAction = "Keep it up!"
+                    notification.soundName = UILocalNotificationDefaultSoundName
+                    notification.userInfo = ["CustomField1": "w00t"]
+                    UIApplication.sharedApplication().scheduleLocalNotification(notification)
+                }
+                
             }else {
                 newPromise = OneTimePromise(titleInput: titleTextField.text, descriptionInput: descriptionTextField.text)
+                
+                let settings = UIApplication.sharedApplication().currentUserNotificationSettings()
+                if settings!.types != .None {
+                    let notification = UILocalNotification()
+                    notification.fireDate = NSDate(timeIntervalSinceNow: 15)
+                    notification.alertBody = "Don't forget to complete " + titleTextField.text!
+                    notification.alertAction = "Keep it up!"
+                    notification.soundName = UILocalNotificationDefaultSoundName
+                    notification.userInfo = ["CustomField1": "w00t"]
+                    UIApplication.sharedApplication().scheduleLocalNotification(notification)
+                }
             }
         }
 //        self.itemName = itemNameTextBox.text

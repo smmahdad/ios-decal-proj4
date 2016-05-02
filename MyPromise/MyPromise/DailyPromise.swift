@@ -37,6 +37,23 @@ class DailyPromise:Promise {
         return String(super.statitistics!.daysCompleted!) + " / " + String(super.statitistics!.getTotalDays())
     }
     
+    func daysAwayFromToday() -> Int {
+        let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        let myComponents = myCalendar.components(.Weekday, fromDate: NSDate())
+        //For 0 index, where 0 is Sunday
+        let weekDay = myComponents.weekday - 1
+        
+        var i = 0
+//        print("For loop")
+        for i in 0...6 {
+            print(i)
+            if daysOfPromise![(i + weekDay) % 7] {
+                return i
+            }
+        }
+        return i
+    }
+    
     func getDaysOfPromise() -> String {
         var final = ""
         var broke = false

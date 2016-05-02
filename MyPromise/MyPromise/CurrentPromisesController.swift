@@ -21,6 +21,8 @@ class CurrentPromisesController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 //        currBoolFlag = true
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
     }
 
     override func didReceiveMemoryWarning() {
@@ -225,7 +227,54 @@ class CurrentPromisesController: UITableViewController {
         
         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
     }
+    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        
+//        //1
+//        let appDelegate =
+//        UIApplication.sharedApplication().delegate as! AppDelegate
+//        
+//        let managedContext = appDelegate.managedObjectContext
+//        
+//        //2
+//        let fetchRequest = NSFetchRequest(entityName: "PromiseArrayEntity")
+//        
+//        //3
+//        do {
+//            let results =
+//            try managedContext.executeFetchRequest(fetchRequest)
+//            var promises = results as! [NSManagedObject]
+//            
+//            
+//            
+//        } catch let error as NSError {
+//            print("Could not fetch \(error), \(error.userInfo)")
+//        }
+//    }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
