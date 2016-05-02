@@ -45,3 +45,11 @@ to create a new promise
 - AddPromiseViewController.Swift
 - MapPromisesViewController.Swift
 - PromiseDetailsViewController.Swift
+
+### Notes
+- This should only be ran on the iPhone 6s Plus in portrait mode
+- GeoCoding (Apple's default coordinate finder) has issues
+ so you can't ping make a geographical promise and quickly swap
+ to the map for fear of crashing.
+- Also, the geocoding throws a nil if it can't find the location
+ and I couldn't figure out how to catch that.
